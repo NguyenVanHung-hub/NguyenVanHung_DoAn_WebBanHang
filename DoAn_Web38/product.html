@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Import Bootrap -->
+
+      <link rel="stylesheet" href="./lib/bootrap/css/bootstrap.min.css">
+
+    <!-- Import Icon -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+
+    <!-- Import Owl CSS-->
+
+    <link rel="stylesheet" href="./lib/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/dist/assets/owl.theme.default.min.css">
+
+    <!-- Import Style Css -->
+
+    <link rel="stylesheet" href="./assets/css/Style.css">
+
+    <link rel="stylesheet" href="./assets/css/Product.css">
+  
+</head>
+<body>
+    <div class="wrapper">
+        
+
+        <!-- Header -->
+
+        <div class="header">
+             
+
+            <!-- header-top -->
+
+            <div class="header-top">
+                <img src="./assets/img/header-top.png" alt="anh header-top">
+            </div>
+
+            <!-- header-main -->
+
+            <div class="header-main">
+                <div class="icon-moblie moblie">
+                    <i class="fa-solid fa-bars moblie"></i>
+                </div>
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="anh logo">
+                </div>
+
+                <div class="search">
+                    <input type="search" id="search" placeholder="Search..." >
+                    <i class="fa-solid fa-magnifying-glass icon icon-pro"></i>
+                </div>
+                <div class="header-main-right">
+                    <div class="singe-in">
+                        <a href="#"><button>Dang Nhap</button></a>
+                    </div>
+                    <div class="shop">
+                        <a href="#"><button>Gio Hang</button></a>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+
+
+            <!-- menu-Moblie -->
+
+            <div class="menu-moblie moblie" style="padding: 10px 20px";>
+                <div class="menu-moblie-top moblie">
+                    <input class="moblie" type="search" placeholder="Search...">
+                    <i class="fa-solid fa-x iconX"></i>
+                </div>
+                <div class="menu-moblie-bottom moblie">
+                    <ul>
+                        <a href="../index.html"><li class="moblie">Trang Chu</li></a>
+                        <a href="#"><li class="moblie">Gioi Thieu</li></a>
+                        <a href="../product.html"><li class="moblie">Cua Hang</li></a>
+                        <a href="#"><li class="moblie">Tin Tuc </li></a>
+                        <a href="#"><li class="moblie">Lien He </li></a>
+                        <a href="#"><li class="moblie">Dang Nhap </li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Menu main -->
+
+            <div class="menu-main">
+                <ul>
+                    <a href="../index.html"><li>Trang Chu</li></a>
+                    <a href="#"><li>Gioi Thieu</li></a>
+                    <a href="#"><li>Cua Hang</li></a>
+                    <a href="#"><li>Tin Tuc </li></a>
+                    <a href="#"><li>Lien He </li></a>
+                </ul>
+            </div>
+            
+            <!-- SlideShow -->
+ 
+        </div>
+
+
+        <!-- shop -->
+        <div class="shop-product">
+            <div class="shop-top">
+                <div class="menu-product">
+                    <a href="./index.html">Trang Chu</a>
+                    <span class="gach">/</span>
+                    <span>Cua Hang</span>
+                </div>
+                <div class="selection">
+                    <select name="orderby" class="orderby">
+                        <option value="menu-oder">Thu Thu Mac Dinh</option>
+                        <option value="price">Gia Tu Thap Den Cao</option>
+                        <option value="price-desc">Gia Tu Cao Xuong Thap</option>
+                    </select>
+                </div>
+            </div>
+            <div class="shop-bottom ">
+                
+                    <div class="row row-js-pro">
+                        <!-- <div class="col-sm-6 col-md-3 col-12 shop-bottom-item">
+                            <img src="./assets/img/product-hot1.jpg" alt="">
+                            <div class="product-suggest-item-bottom product-item-bottom">
+                                <span>san pham</span>
+                                <span>24.000</span>
+                            </div>
+                            <div class="button-shop">
+                                <button>Them Vao Gio Hang</button>
+                            </div> 
+                        </div> -->
+                    </div>
+                
+                
+            </div>
+            <div class="pagination">
+                <div id="pagNums"></div>
+            </div>
+        </div>
+         
+
+        <!-- Footer -->
+        <div class="footer ">
+            <div class=" footer-top ">
+                <div class="footer-item-left ">
+                    <i class="fa-sharp fa-solid fa-house-chimney"></i>
+                    <span>xxHoang Liet, P.Hoang Mai, TP.Ha Noi</span>
+                    <br>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>09999999-123456789</span>
+                    <br>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>email@gamil.com</span>
+                    <br>
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>facebook.com</span>
+                    <br>
+                </div>
+                <div class="footer-item-right ">
+                    <h3>Danh Muc</h3>
+                    <div class="is-divider"></div>
+                    <div class="footer-right-item">
+                        <ul>
+                            <li><a href="../index.html">Trang Chu</a></li>
+                            <li><a href="#">Gioi Thieu</a></li>
+                            <li><a href="#">Cua Hang </a></li>
+                            <li><a href="#">Tin tuc </a></li>
+                            <li><a href="#">lien He</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2022 Coral , Inc.</span>
+                <img src="./assets/img/footer.png" alt="loi anh">
+                <span>Degins By Hung-web38</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Import Jquery -->
+    <script src="./lib/jquery-3.7.1.min.js"></script>
+
+    <!-- Import Owl Js -->
+    <script src="./lib/dist/owl.carousel.min.js"></script>
+
+    <!-- Import Setup-owl -->
+
+    <script src="./assets/js/Setup-Owl.js"></script>
+
+
+    <!-- Import Bootrap Js -->
+    <script src="./lib/bootrap/js/bootstrap.min.js"></script>
+
+    <!-- Import mainJs -->
+
+    <script src="./assets/js/main.js"></script>
+
+    <script src="./assets/js/Product.js"></script>
+    
+
+</body>
+</html>
+
