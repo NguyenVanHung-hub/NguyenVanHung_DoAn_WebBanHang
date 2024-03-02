@@ -7,7 +7,8 @@ const mau = document.querySelector('#mau');
 const plus = document.querySelectorAll('.plus');
 const minus = document.querySelectorAll('.minus');
 // Hien Thi accordion
-plusCkick.forEach((item) =>{
+
+plusCkick.forEach((item,) =>{
     item.addEventListener("click",() =>{
         plusHt();
         minusHt();
@@ -17,8 +18,9 @@ plusCkick.forEach((item) =>{
 });
 
 let hienThi = () =>{
-    accordionBottom.forEach((item) =>{
+    accordionBottom.forEach((item,) =>{
         item.style.display = "block";
+        console.log()
     });
 };
 let plusHt = () =>{
@@ -61,7 +63,3 @@ let minusA = () =>{
     });
 };
 
-const seRight = document.querySelector('.section-right');
-seRight.addEventListener("click", (e) =>{
-    console.log(e.target.classList.contains('section-right'))
-})

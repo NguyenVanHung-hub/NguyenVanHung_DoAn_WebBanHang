@@ -108,7 +108,20 @@ html{
 .header-main-right .shop button{
     margin: 0 0.2rem;
 }
-
+.cart-btn{
+    position: relative;
+}
+.cart-btn a{
+    color: #000000;
+}
+.cart-quantity{
+    font-size: 1.2rem;
+    position: absolute;
+    color: #ff0000;
+    top: -50%;
+    right: -20%;
+    z-index: 2;
+}
 
 /* Menu-main */
 
