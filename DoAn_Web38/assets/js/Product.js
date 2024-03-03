@@ -167,10 +167,10 @@ const displayData = (data, page) =>{
         HTML = HTML + `
         <div class="col-sm-6 col-md-3 col-12 ">
            <div class="product-suggest-item">
-               <img src=${item.image} alt="">
+               <img src=${item.image} alt="" class="img">
                <div class="product-suggest-item-bottom product-item-bottom">
-               <span>${item.name}</span>
-               <span>${item.price}</span>
+               <span class="name">${item.name}</span>
+               <span class="price">${item.price}</span>
                </div>
            <div class="button-shop">
            <button>Shop Now</button>
@@ -238,20 +238,28 @@ const createPagination = (data) =>{
 
 // Menu 
 
-const menuHt = document.querySelector('.icon-moblie');
-const menuMoblie = document.querySelector('.menu-moblie');
-const menuAn = document.querySelector('.iconX');
-const wrapperMenu = document.querySelector('.wrapper');
-menuHt.addEventListener("click", () =>{
-    menuMoblie.style.transform = "translateX(0)";
+// const menuHt = document.querySelector('.icon-moblie');
+// const menuMoblie = document.querySelector('.menu-moblie');
+// const menuAn = document.querySelector('.iconX');
+// const wrapperMenu = document.querySelector('.wrapper');
+// menuHt.addEventListener("click", () =>{
+//     menuMoblie.style.transform = "translateX(0)";
     
-});
-menuAn.addEventListener("click", () =>{
-    menuMoblie.style.transform = "translateX(-200%)";
+// });
+// menuAn.addEventListener("click", () =>{
+//     menuMoblie.style.transform = "translateX(-200%)";
     
-});
-wrapperMenu.addEventListener("click", (event) =>{
-    if(event.target.classList.contains('moblie') === false){
-        menuMoblie.style.transform = "translateX(-200%)";
-    }
-});
+// });
+// wrapperMenu.addEventListener("click", (event) =>{
+//     if(event.target.classList.contains('moblie') === false){
+//         menuMoblie.style.transform = "translateX(-200%)";
+//     }
+// });
+
+
+const opti = document.querySelectorAll('option');
+
+opti.forEach((item) =>{
+   let luaChon = item.value;
+   console.log(luaChon)
+}) 

@@ -379,7 +379,9 @@ html{
     top: 20%;
     display: none;
 }
-
+.active{
+    display: block;
+}
 
 /* Footer */
 .footer{
