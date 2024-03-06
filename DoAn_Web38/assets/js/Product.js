@@ -257,9 +257,8 @@ const createPagination = (data) =>{
 // });
 
 
-const opti = document.querySelectorAll('option');
+const opTi = document.querySelector('.orderby');
 
-opti.forEach((item) =>{
-   let luaChon = item.value;
-   console.log(luaChon)
-}) 
+opTi.addEventListener("click", () =>{
+    console.log(this.value)
+})
