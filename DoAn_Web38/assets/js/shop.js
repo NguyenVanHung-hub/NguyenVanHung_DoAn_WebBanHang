@@ -1,92 +1,106 @@
-// MenuMoblie
-
-const menuHt = document.querySelector('.icon-moblie');
-const menuMoblie = document.querySelector('.menu-moblie');
-const menuAn = document.querySelector('.iconX');
-const wrapperMenu = document.querySelector('.wrapper');
-menuHt.addEventListener("click", () =>{
-    menuMoblie.style.transform = "translateX(0)";
-    
-});
-menuAn.addEventListener("click", () =>{
-    menuMoblie.style.transform = "translateX(-200%)";
-    
-});
-wrapperMenu.addEventListener("click", (event) =>{
-    if(event.target.classList.contains('moblie') === false){
-        menuMoblie.style.transform = "translateX(-200%)";
-    }
-});
-
-
 
 // Gio Hang
-const shopCart = document.querySelector('.shop-cart-product');
+const cartModalOverlay = document.querySelector('.cart-modal-overlay');
 const addToCart = document.querySelectorAll('.button-shop');
+const cart = document.querySelector('.cart-btn');
+const close = document.querySelector('#close-btn');
 
 
-addToCart.forEach((item) =>{
-    item.addEventListener("click", () =>{
-        addToCartClick(item);
+cart.addEventListener('click', () => {
+    cartModalOverlay.style.transform = "translateX(0)";
+  });
+  close.addEventListener('click', () => {
+    cartModalOverlay.style.transform = "translateX(-200%)";
+  });
+  cartModalOverlay.addEventListener('click', (event) => {
+    if (event.target.classList.contains('cart-modal-overlay') === true) {
+      cartModalOverlay.style.transform = "translateX(-200%)";
+    }
+  });
+
+  addToCart.forEach((item, ) => {
+    item.addEventListener('click', () => {
+       addToCartclick(item);
     });
-});
- let addToCartClick = (item) =>{
-    let carItem = item.parentElement;
-    
-    let price = carItem.querySelector(".price").innerHTML;
-    let name = carItem.querySelector(".name").innerHTML;
-    let img = carItem.querySelector(".img").src;
+  })
 
-    addItemToCart(price, name, img)    
+const addToCartclick = (item) =>{
+    let cartItem = item.parentElement;
     
- };
-let proWrapRow = document.querySelector('.shop-rows');
+    let price = cartItem.querySelector('.price').innerHTML;
+    let imageSrc = cartItem.querySelector('.img').src;
+    let name = cartItem.querySelector('.name').innerHTML;
+    addItemToCart(name, imageSrc, price);
+    cartModalOverlay.style.transform = "translateX(0)";
+};
 
-let pushPro = [];
-let addItemToCart = (price, name, img)=>{
-    
-    pushPro.push({
-        names : name,
-        prices : price,
-        imgae: img
-    });
-    console.log(pushPro)
-    // let HTML = `
-    // <div class="shop-row-item">
-    //    <img class="cart-img" src=${img} alt="">
-    //     <span class="cart-name">${name}</span>
-    // </div>
-    // <span class="cart-price">${price}</span>
-    // <input class="pro-qua" type="number" value="1">
-    // <button class="xoa">Xoa</button>
-    // `
-
-    // let proRow = document.createElement("div");
-    // proRow.classList.add("shop-row");
-    
-
-    // proRow.innerHTML = HTML;
-    
-    
-    // proWrapRow.appendChild(proRow);
-    // console.log(proWrapRow);
-
- };
-
- let HTML = ``;
- pushPro.forEach(() =>{
-    HTML = HTML +`
-    <div class="col-12 col-sm-6 col-md-12 shop-row">
-                        
-         <div class="shop-row-item">
-            <img class="cart-img" src="" alt="">
-             <span class="cart-name"></span>
+const addItemToCart = (name, imageSrc, price) =>{
+    const productRows = document.querySelector('.product-rows');
+    let productRow = document.createElement('div');
+    productRow.classList.add('product-row');
+    const cartImge = document.querySelectorAll('.cart-image');
+    let isAdd = false;
+    cartImge.forEach((val) => {
+      if (val.src == imageSrc) {
+        alert('San pham da co trong gio hang');
+        isAdd = true;
+        return;
+      }
+    })
+    if (isAdd) {
+      return
+    }
+    productRow.innerHTML = `
+      <div class="pro-shop">
+        <img class="cart-image" src="${imageSrc}" alt="">
+        <div class="pro-shop-bot">
+            <span class ="cart-name">${name}</span>
+            <span class ="cart-price">${price}</span>
         </div>
-        <span class="cart-price"></span>
-        <input class="pro-qua" type="number" value="1">
-        <button class="xoa">Xoa</button>              
-    </div>
-    `
- });
-//  proWrapRow.innerHTML = HTML;
- 
+      </div>
+      <input class="product-quantity" type="number" value="1">
+      <button class="remove-btn">Remove</button>
+    `;
+
+    productRows.appendChild(productRow);
+
+    removeProduct();
+    chanProductValue();
+    updatePrice();
+};
+
+const removeProduct = () =>{
+    let btnRemove = document.querySelectorAll(".remove-btn");
+    btnRemove.forEach((item) =>{
+        item.addEventListener("click", () =>{
+            item.parentElement.remove();
+            updatePrice();
+        });
+    });
+};
+
+const chanProductValue = () =>{
+    const inputQuality = document.querySelectorAll('.product-quantity');
+    inputQuality.forEach((item) =>{
+        item.addEventListener("change", () =>{
+            updatePrice();
+        })
+    })
+}
+
+const updatePrice = () =>{
+    const productRowEle = document.querySelectorAll('.product-row');
+    let total = 0;
+    productRowEle.forEach((item) =>{
+        const priceEl = item.querySelector('.cart-price');
+        const price = parseFloat(priceEl.innerHTML.replace('vnd', ' '))
+        const quantity = item.querySelector('.product-quantity').value;
+       
+        total = total + (price * quantity);
+        
+
+        document.querySelector('.total-price').innerHTML = total;
+        document.querySelector('.cart-quantity').innerHTML = productRowEle.length;
+    });
+}
+

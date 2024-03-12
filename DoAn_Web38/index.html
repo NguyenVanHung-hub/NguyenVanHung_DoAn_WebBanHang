@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-      <!-- Import Bootrap -->
+    <!-- Import Bootrap -->
 
-      <link rel="stylesheet" href="./lib/bootrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/bootrap/css/bootstrap.min.css" />
 
     <!-- Import Icon -->
 
@@ -20,114 +20,119 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-
-
     <!-- Import Owl CSS-->
 
-    <link rel="stylesheet" href="./lib/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./lib/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./lib/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./lib/dist/assets/owl.theme.default.min.css" />
 
     <!-- Import Style Css -->
 
-    <link rel="stylesheet" href="./assets/css/Style.css">
-
-
-  
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/Style.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        
 
-        <!-- Header -->
+      <div class="cart-modal-overlay">
+        <div class="cart-modal">
+          <i id="close-btn" class="fas fa-times"></i>
+          <h1 class="cart-is-empty">Cart is empty</h1>
+  
+          <div class="product-rows"></div>
+          <div class="total">
+            <h1 class="cart-total">Tổng</h1>
+            <span class="total-price">0 vnd</span>
+            <button class="purchase-btn">Thanh Toán</button>
+          </div>
+        </div>
+      </div>
+      <!-- Header -->
 
-        <div class="header">
-             
+      <div class="header">
+        <!-- header-top -->
 
-            <!-- header-top -->
-
-            <div class="header-top">
-                <img src="./assets/img/header-top.png" alt="anh header-top">
-            </div>
-
-            <!-- header-main -->
-
-            <div class="header-main">
-                <div class="icon-moblie moblie">
-                    <i class="fa-solid fa-bars moblie"></i>
-                </div>
-                <div class="logo">
-                    <img src="./assets/img/logo.png" alt="anh logo">
-                </div>
-
-                <div class="search">
-                    <input type="search" placeholder="Search...">
-                    <i class="fa-solid fa-magnifying-glass icon"></i>
-                </div>
-                <div class="header-main-right">
-                    <div class="singe-in">
-                        <a href="#"><button>Dang Nhap</button></a>
-                    </div>
-                    <div class="shop">
-                        <a href="./shop.html"><button>Gio Hang</button></a>
-                    </div>
-                    <div class="cart-btn">
-                        <a href="./shop.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <span class="cart-quantity">0</span>
-                      </div>
-                    
-                </div>
-            </div>
-
-            <!-- Menu main -->
-
-            <div class="menu-main">
-                <ul>
-                    <a href="#"><li>Trang Chu</li></a>
-                    <a href="#"><li>Gioi Thieu</li></a>
-                    <a href="./product.html"><li>Cua Hang</li></a>
-                    <a href="#"><li>Tin Tuc </li></a>
-                    <a href="#"><li>Lien He </li></a>
-                </ul>
-            </div>
-            <div class="menu-moblie moblie" style="padding: 10px 20px";>
-                <div class="menu-moblie-top moblie">
-                    <input class="moblie" type="search" placeholder="Search...">
-                    <i class="fa-solid fa-x iconX"></i>
-                </div>
-                <div class="menu-moblie-bottom moblie">
-                    <ul>
-                        <a href="#"><li class="moblie">Trang Chu</li></a>
-                        <a href="#"><li class="moblie">Gioi Thieu</li></a>
-                        <a href="./product.html"><li class="moblie">Cua Hang</li></a>
-                        <a href="#"><li class="moblie">Tin Tuc </li></a>
-                        <a href="#"><li class="moblie">Lien He </li></a>
-                        <a href="#"><li class="moblie">Dang Nhap </li></a>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- SlideShow -->
- 
-            <div class="slider-header owl-carousel owl-theme slide-show">
-                <div class="item"><img src="./assets/img/Slider1.jpg" alt=""></div>
-                <div class="item"><img src="./assets/img/Slider2.jpg" alt=""></div>
-                <div class="item"><img src="./assets/img/Slider3.jpg" alt=""></div>
-                <div class="item"><img src="./assets/img/Slider4.jpg" alt=""></div>
-            </div>
-
+        <div class="header-top">
+          <img src="./assets/img/header-top.png" alt="anh header-top" />
         </div>
 
+        <!-- header-main -->
 
-         <!-- Product -->
+        <div class="header-main">
+          <div class="icon-moblie moblie">
+            <i class="fa-solid fa-bars moblie"></i>
+          </div>
+          <div class="logo">
+            <img src="./assets/img/logo.png" alt="anh logo" />
+          </div>
 
-         <div class="product ">
+          <div class="search">
+            <input type="search" placeholder="Search..." />
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+          </div>
+          <div class="header-main-right">
+            <div class="singe-in">
+              <a href="#"><button>Dang Nhap</button></a>
+            </div>
+            <div class="shop">
+              <a href="./shop.html"><button>Gio Hang</button></a>
+            </div>
+            <div class="cart-btn">
+              
+                <i class="fa-solid fa-cart-shopping"></i
+              >
+              <span class="cart-quantity">0</span>
+            </div>
+          </div>
+        </div>
 
-            <!-- Product-top -->
-            
-            <div class="product-top">
-                <h2 class="tex-animation">San Pham Hot</h2>
-                <div class="slider-product owl-carousel owl-theme slide-show product-hot ">
-                    <!-- <div class="item  product-hot-item product-item">
+        <!-- Menu main -->
+
+        <div class="menu-main">
+          <ul>
+            <a href="#"><li>Trang Chu</li></a>
+            <a href="#"><li>Gioi Thieu</li></a>
+            <a href="./product.html"><li>Cua Hang</li></a>
+            <a href="#"><li>Tin Tuc</li></a>
+            <a href="#"><li>Lien He</li></a>
+          </ul>
+        </div>
+        <div class="menu-moblie moblie" style="padding: 10px 20px" ;>
+          <div class="menu-moblie-top moblie">
+            <input class="moblie" type="search" placeholder="Search..." />
+            <i class="fa-solid fa-x iconX"></i>
+          </div>
+          <div class="menu-moblie-bottom moblie">
+            <ul>
+              <a href="#"><li class="moblie">Trang Chu</li></a>
+              <a href="#"><li class="moblie">Gioi Thieu</li></a>
+              <a href="./product.html"><li class="moblie">Cua Hang</li></a>
+              <a href="#"><li class="moblie">Tin Tuc</li></a>
+              <a href="#"><li class="moblie">Lien He</li></a>
+              <a href="#"><li class="moblie">Dang Nhap</li></a>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SlideShow -->
+
+        <div class="slider-header owl-carousel owl-theme slide-show">
+          <div class="item"><img src="./assets/img/Slider1.jpg" alt="" /></div>
+          <div class="item"><img src="./assets/img/Slider2.jpg" alt="" /></div>
+          <div class="item"><img src="./assets/img/Slider3.jpg" alt="" /></div>
+          <div class="item"><img src="./assets/img/Slider4.jpg" alt="" /></div>
+        </div>
+      </div>
+
+      <!-- Product -->
+
+      <div class="product">
+        <!-- Product-top -->
+
+        <div class="product-top">
+          <h2 class="tex-animation">San Pham Hot</h2>
+          <div
+            class="slider-product owl-carousel owl-theme slide-show product-hot"
+          >
+            <!-- <div class="item  product-hot-item product-item">
                         <img src="./assets/img/product-hot1.jpg" alt="">
                         <div class="product-hot-item-bottom product-item-bottom">
                             <span>san pham</span>
@@ -215,17 +220,16 @@
                         </div>
                     
                     </div> -->
-                    
-                </div>
-            </div>
-                
-            <!-- Product-bottom -->
+          </div>
+        </div>
 
-            <div class="product-bottom">
-                <h2>Hom nay an gi</h2>
-                <div class="product-bottom-container container">
-                    <div class="row row-js-Home-Pr">
-                        <!-- <div class="col-sm-6 col-md-3 col-12 ">
+        <!-- Product-bottom -->
+
+        <div class="product-bottom">
+          <h2>Hom nay an gi</h2>
+          <div class="product-bottom-container container">
+            <div class="row row-js-Home-Pr">
+              <!-- <div class="col-sm-6 col-md-3 col-12 ">
                             <div class="product-suggest-item">
                                 <img src="./assets/img/product-hot1.jpg" alt="">
                                 <div class="product-suggest-item-bottom product-item-bottom">
@@ -308,142 +312,161 @@
                             <button>Them Vao Gio Hang</button>
                         </div> 
                         </div> -->
-                    </div>
-                </div>
-                <div class="product-full">
-                    <a href="../product.html">
-                        <button>Xem Them</button>
-                    </a>
-                </div>
             </div>
+          </div>
+          <div class="product-full">
+            <a href="../product.html">
+              <button>Xem Them</button>
+            </a>
+          </div>
         </div>
+      </div>
 
-        <!-- Section -->
-        <div class="section">
-            <div class="section-bcimg">
-                <h2>tinh hoa am thuc viet</h2>
-            <div class="section-item container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-12 section-left">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7094.136096284894!2d105.82862782653692!3d20.965252088203368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad001f980253%3A0x2c5b8ab5fe9f57ae!2zSG_DoG5nIExp4buHdCwgSG_DoG5nIE1haSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1709731861046!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- Section -->
+      <div class="section">
+        <div class="section-bcimg">
+          <h2>tinh hoa am thuc viet</h2>
+          <div class="section-item container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-12 section-left">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7094.136096284894!2d105.82862782653692!3d20.965252088203368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad001f980253%3A0x2c5b8ab5fe9f57ae!2zSG_DoG5nIExp4buHdCwgSG_DoG5nIE1haSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1709731861046!5m2!1svi!2s"
+                  width="100%"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="col-md-6 col-sm-6 col-12 section-right">
+                <div class="section-right-item">
+                  <div class="accordion-top">
+                    <span id="mau">Chat Luong</span>
+                    <div class="plus">
+                      <button class="plus-click">
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-12 section-right">
-                        <div class="section-right-item">
-                            <div class="accordion-top">
-                                <span id="mau">Chat Luong</span>
-                                <div class="plus">
-                                    <button class="plus-click">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </div>
-                                <div class="minus">
-                                    <button class="minus-click">
-                                        <i class="fa-solid fa-minus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="accordion-bottom ">
-                                <span id="hien">Chất lượng được đảm bảo từ khâu nguyên liêu, chế biến, và ra thành phẩm.</span>
-                            </div>
-                        </div>
-                        <div class="section-right-item">
-                            <div class="accordion-top">
-                                <span>Chat Luong</span>
-                                <div class="plus">
-                                    <button class="plus-click">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </div>
-                                <div class="minus">
-                                    <button class="minus-click">
-                                        <i class="fa-solid fa-minus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="accordion-bottom">
-                                <span>Chất lượng được đảm bảo từ khâu nguyên liêu, chế biến, và ra thành phẩm.</span>
-                            </div>
-                        </div>
-                        <div class="section-right-item">
-                            <div class="accordion-top">
-                                <span>Chat Luong</span>
-                                <div class="plus">
-                                    <button class="plus-click">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </div>
-                                <div class="minus">
-                                    <button class="minus-click">
-                                        <i class="fa-solid fa-minus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="accordion-bottom">
-                                <span>Chất lượng được đảm bảo từ khâu nguyên liêu, chế biến, và ra thành phẩm.</span>
-                            </div>
-                        </div>
-                        <div class="section-right-item">
-                            <div class="accordion-top">
-                                <span>Chat Luong</span>
-                                <div class="plus">
-                                    <button class="plus-click">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </div>
-                                <div class="minus">
-                                    <button class="minus-click">
-                                        <i class="fa-solid fa-minus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="accordion-bottom">
-                                <span>Chất lượng được đảm bảo từ khâu nguyên liêu, chế biến, và ra thành phẩm.</span>
-                            </div>
-                        </div>
+                    <div class="minus">
+                      <button class="minus-click">
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
                     </div>
+                  </div>
+                  <div class="accordion-bottom">
+                    <span id="hien"
+                      >Chất lượng được đảm bảo từ khâu nguyên liêu, chế biến, và
+                      ra thành phẩm.</span
+                    >
+                  </div>
                 </div>
+                <div class="section-right-item">
+                  <div class="accordion-top">
+                    <span>Chat Luong</span>
+                    <div class="plus">
+                      <button class="plus-click">
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                    <div class="minus">
+                      <button class="minus-click">
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="accordion-bottom">
+                    <span
+                      >Chất lượng được đảm bảo từ khâu nguyên liêu, chế biến, và
+                      ra thành phẩm.</span
+                    >
+                  </div>
+                </div>
+                <div class="section-right-item">
+                  <div class="accordion-top">
+                    <span>Chat Luong</span>
+                    <div class="plus">
+                      <button class="plus-click">
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                    <div class="minus">
+                      <button class="minus-click">
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="accordion-bottom">
+                    <span
+                      >Chất lượng được đảm bảo từ khâu nguyên liêu, chế biến, và
+                      ra thành phẩm.</span
+                    >
+                  </div>
+                </div>
+                <div class="section-right-item">
+                  <div class="accordion-top">
+                    <span>Chat Luong</span>
+                    <div class="plus">
+                      <button class="plus-click">
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                    <div class="minus">
+                      <button class="minus-click">
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="accordion-bottom">
+                    <span
+                      >Chất lượng được đảm bảo từ khâu nguyên liêu, chế biến, và
+                      ra thành phẩm.</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Footer -->
-        <div class="footer ">
-            <div class=" footer-top ">
-                <div class="footer-item-left ">
-                    <i class="fa-sharp fa-solid fa-house-chimney"></i>
-                    <span>xxHoang Liet, P.Hoang Mai, TP.Ha Noi</span>
-                    <br>
-                    <i class="fa-solid fa-phone"></i>
-                    <span>09999999-123456789</span>
-                    <br>
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>email@gamil.com</span>
-                    <br>
-                    <i class="fa-brands fa-facebook"></i>
-                    <span>facebook.com</span>
-                    <br>
-                </div>
-                <div class="footer-item-right ">
-                    <h3>Danh Muc</h3>
-                    <div class="is-divider"></div>
-                    <div class="footer-right-item">
-                        <ul>
-                            <li><a href="#">Trang Chu</a></li>
-                            <li><a href="#">Gioi Thieu</a></li>
-                            <li><a href="./product.html">Cua Hang </a></li>
-                            <li><a href="#">Tin tuc </a></li>
-                            <li><a href="#">lien He</a></li>
-                        </ul>
-                    </div>
-                </div>
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footer-top">
+          <div class="footer-item-left">
+            <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            <span>xxHoang Liet, P.Hoang Mai, TP.Ha Noi</span>
+            <br />
+            <i class="fa-solid fa-phone"></i>
+            <span>09999999-123456789</span>
+            <br />
+            <i class="fa-solid fa-envelope"></i>
+            <span>email@gamil.com</span>
+            <br />
+            <i class="fa-brands fa-facebook"></i>
+            <span>facebook.com</span>
+            <br />
+          </div>
+          <div class="footer-item-right">
+            <h3>Danh Muc</h3>
+            <div class="is-divider"></div>
+            <div class="footer-right-item">
+              <ul>
+                <li><a href="#">Trang Chu</a></li>
+                <li><a href="#">Gioi Thieu</a></li>
+                <li><a href="./product.html">Cua Hang </a></li>
+                <li><a href="#">Tin tuc </a></li>
+                <li><a href="#">lien He</a></li>
+              </ul>
             </div>
-            <div class="footer-bottom">
-                <span>© 2022 Coral , Inc.</span>
-                <img src="./assets/img/footer.png" alt="loi anh">
-                <span>Degins By Hung-web38</span>
-            </div>
+          </div>
         </div>
-
+        <div class="footer-bottom">
+          <span>© 2022 Coral , Inc.</span>
+          <img src="./assets/img/footer.png" alt="loi anh" />
+          <span>Degins By Hung-web38</span>
+        </div>
+      </div>
     </div>
 
     <!-- Import Jquery -->
@@ -456,7 +479,6 @@
 
     <script src="./assets/js/Setup-Owl.js"></script>
 
-
     <!-- Import Bootrap Js -->
     <script src="./lib/bootrap/js/bootstrap.min.js"></script>
 
@@ -467,8 +489,5 @@
     <script src="./assets/js/Home.js"></script>
 
     <script src="./assets/js/shop.js"></script>
-    
-
-</body>
+  </body>
 </html>
-
