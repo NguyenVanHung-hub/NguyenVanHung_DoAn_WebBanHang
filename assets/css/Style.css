@@ -461,6 +461,10 @@ html {
   font-size: 0.7rem;
   margin-top: 0.3rem;
 }
+.reviews-icon{
+  margin-bottom: 0.5rem;
+}
+
 
 /* Section */
 .section {
@@ -712,7 +716,9 @@ iframe {
     padding-left: 50px;
     padding-right: 50px;
   }
-
+  .header-main .logo img{
+    object-fit: contain;
+}
   .menu-main {
     padding-left: 50px;
     padding-right: 50px;
@@ -739,7 +745,10 @@ iframe {
   }
   .reviews-item{
     width: 100%;
+    margin-top: 1.2rem;
   }
+
+  
   .section-bcimg {
     padding-left: 0;
     padding-right: 0;

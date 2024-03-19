@@ -119,6 +119,7 @@ const removeProduct = () =>{
 
 const chanProductValue = () =>{
     const inputQuality = document.querySelectorAll('.product-quantity');
+    
     inputQuality.forEach((item,index) =>{
         item.addEventListener("change", () =>{
             cartItems[index].quantity = item.value;
