@@ -1,0 +1,39 @@
+
+
+
+.header-main {
+    justify-content: space-between;
+}
+
+.header-main-right {
+    justify-content: flex-end;
+}
+.singe button{
+    padding: 0.3rem 0.9rem;
+}
+
+.ditel{
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* overflow: hidden; */
+}
+.ditel-top{
+    width: 100%;
+}
+.ditel-top img{
+    width: 100%;
+    height: 513px;
+    object-fit: cover;
+    
+}
+.ditel-bottom{
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 99999;
+    color: #ffff;
+    font-size: 1.8rem;
+    font-style: oblique;
+}

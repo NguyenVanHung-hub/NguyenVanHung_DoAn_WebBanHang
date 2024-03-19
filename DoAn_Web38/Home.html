@@ -41,7 +41,7 @@
           <div class="total">
             <h1 class="cart-total">Tổng</h1>
             <span class="total-price">0 vnd</span>
-            <button class="purchase-btn">Thanh Toán</button>
+            <a href="./pay.html"><button class="purchase-btn">Thanh Toán</button></a>
           </div>
         </div>
       </div>
@@ -61,7 +61,9 @@
             <i class="fa-solid fa-bars moblie"></i>
           </div>
           <div class="logo">
-            <img src="./assets/img/logo.png" alt="anh logo" />
+            <a href="./ditel.html">
+              <img src="./assets/img/logo.png" alt="anh logo" />
+            </a>
           </div>
 
           <div class="search">
@@ -70,10 +72,10 @@
           </div>
           <div class="header-main-right">
             <div class="singe-in">
-              <a href="#"><button>Dang Nhap</button></a>
+              <a href="#"><button>Đăng Nhập</button></a>
             </div>
             <div class="shop">
-              <a href="./shop.html"><button>Gio Hang</button></a>
+              <button class="gio">Giỏ Hàng</button>
             </div>
             <div class="cart-btn">
               
@@ -88,28 +90,28 @@
 
         <div class="menu-main">
           <ul>
-            <a href="#"><li>Trang Chu</li></a>
-            <a href="#"><li>Gioi Thieu</li></a>
-            <a href="./product.html"><li>Cua Hang</li></a>
-            <a href="#"><li>Tin Tuc</li></a>
-            <a href="#"><li>Lien He</li></a>
+            <a href="#"><li>Trang Chủ</li></a>
+            <a href="#"><li>Giới Thiệu</li></a>
+            <a href="./product.html"><li>Cửa Hàng</li></a>
+            <a href="#"><li>Tin Tức</li></a>
+            <a href="#"><li>Liên Hệ</li></a>
           </ul>
         </div>
-        <div class="menu-moblie moblie" style="padding: 10px 20px" ;>
+        <div class="menu-moblie moblie" style="padding: 10px 20px; height: 650px;">
           <div class="menu-moblie-top moblie">
             <input class="moblie" type="search" placeholder="Search..." />
             <i class="fa-solid fa-x iconX"></i>
           </div>
           <div class="menu-moblie-bottom moblie">
             <ul>
-              <a href="#"><li class="moblie">Trang Chu</li></a>
-              <a href="#"><li class="moblie">Gioi Thieu</li></a>
-              <a href="./product.html"><li class="moblie">Cua Hang</li></a>
-              <a href="#"><li class="moblie">Tin Tuc</li></a>
-              <a href="#"><li class="moblie">Lien He</li></a>
-              <a href="#"><li class="moblie">Dang Nhap</li></a>
+                <a href="./Home.html"><li class="moblie">Trang Chủ</li></a>
+                <a href="#"><li class="moblie">Giới Thiệu</li></a>
+                <a href="./product.html"><li class="moblie">Cửa Hàng</li></a>
+                <a href="#"><li class="moblie">Tin Tức </li></a>
+                <a href="#"><li class="moblie">Liên Hệ </li></a>
+                <a href="#"><li class="moblie">Đăng Nhập </li></a>
             </ul>
-          </div>
+        </div>
         </div>
 
         <!-- SlideShow -->
@@ -128,7 +130,7 @@
         <!-- Product-top -->
 
         <div class="product-top">
-          <h2 class="tex-animation">San Pham Hot</h2>
+          <h2 class="tex-animation">Sản Phẩm Bán Chạy!</h2>
           <div
             class="slider-product owl-carousel owl-theme slide-show product-hot"
           >
@@ -226,98 +228,58 @@
         <!-- Product-bottom -->
 
         <div class="product-bottom">
-          <h2>Hom nay an gi</h2>
+          <h2>Hôm Nay Ăn Gì?</h2>
           <div class="product-bottom-container container">
             <div class="row row-js-Home-Pr">
-              <!-- <div class="col-sm-6 col-md-3 col-12 ">
-                            <div class="product-suggest-item">
-                                <img src="./assets/img/product-hot1.jpg" alt="">
-                                <div class="product-suggest-item-bottom product-item-bottom">
-                                <span>san pham</span>
-                                <span>24.000</span>
-                                </div>
-                            <div class="button-shop">
-                            <button>Shop Now</button>
-                            </div> 
-                            </div>
-                            
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-12 product-suggest-item">
-                            <img src="./assets/img/product-hot1.jpg" alt="">
-                        <div class="product-suggest-item-bottom product-item-bottom">
-                            <span>san pham</span>
-                            <span>24.000</span>
-                        </div>
-                        <div class="button-shop">
-                            <button>Them Vao Gio Hang</button>
-                        </div> 
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-12 product-suggest-item">
-                            <img src="./assets/img/product-hot1.jpg" alt="">
-                        <div class="product-suggest-item-bottom product-item-bottom">
-                            <span>san pham</span>
-                            <span>24.000</span>
-                        </div>
-                        <div class="button-shop">
-                            <button>Them Vao Gio Hang</button>
-                        </div> 
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-12 product-suggest-item">
-                            <img src="./assets/img/product-hot1.jpg" alt="">
-                        <div class="product-suggest-item-bottom product-item-bottom">
-                            <span>san pham</span>
-                            <span>24.000</span>
-                        </div>
-                        <div class="button-shop">
-                            <button>Them Vao Gio Hang</button>
-                        </div> 
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-12 product-suggest-item">
-                            <img src="./assets/img/product-hot1.jpg" alt="">
-                        <div class="product-suggest-item-bottom product-item-bottom">
-                            <span>san pham</span>
-                            <span>24.000</span>
-                        </div>
-                        <div class="button-shop">
-                            <button>Them Vao Gio Hang</button>
-                        </div> 
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-12 product-suggest-item">
-                            <img src="./assets/img/product-hot1.jpg" alt="">
-                        <div class="product-suggest-item-bottom product-item-bottom">
-                            <span>san pham</span>
-                            <span>24.000</span>
-                        </div>
-                        <div class="button-shop">
-                            <button>Them Vao Gio Hang</button>
-                        </div> 
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-12 product-suggest-item">
-                            <img src="./assets/img/product-hot1.jpg" alt="">
-                        <div class="product-suggest-item-bottom product-item-bottom">
-                            <span>san pham</span>
-                            <span>24.000</span>
-                        </div>
-                        <div class="button-shop">
-                            <button>Them Vao Gio Hang</button>
-                        </div> 
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-12 product-suggest-item">
-                            <img src="./assets/img/product-hot1.jpg" alt="">
-                        <div class="product-suggest-item-bottom product-item-bottom">
-                            <span>san pham</span>
-                            <span>24.000</span>
-                        </div>
-                        <div class="button-shop">
-                            <button>Them Vao Gio Hang</button>
-                        </div> 
-                        </div> -->
+              
             </div>
           </div>
           <div class="product-full">
             <a href="../product.html">
-              <button>Xem Them</button>
+              <button>Xem Thêm</button>
             </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- reviews -->
+
+      <div class="reviews">
+        <h3>đánh giá Của khách hàng!</h3>
+        <div class="revi-it">
+          <div class="reviews-item">
+            <div class="reviews-img">
+              <img src="./assets/img/anhreviews1.jpg" alt="">
+            </div>
+            <div class="reviews-tex">
+              <div class="reviews-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span>
+                Mình là khách quen của quán. Món ăn ở đây rất ngon và hợp khẩu vị của mình. Mình sẽ ủng hộ quán dài dài.
+              </span>
+            </div>
+          </div>
+          <div class="reviews-item">
+            <div class="reviews-img">
+              <img src="./assets/img/anhreviews2.jpg" alt="">
+            </div>
+            <div class="reviews-tex">
+              <div class="reviews-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span>
+                Mình là khách quen của quán. Món ăn ở đây rất ngon và hợp khẩu vị của mình. Mình sẽ ủng hộ quán dài dài.
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -325,14 +287,14 @@
       <!-- Section -->
       <div class="section">
         <div class="section-bcimg">
-          <h2>tinh hoa am thuc viet</h2>
+          <h2>tinh hoa ẩm thực việt</h2>
           <div class="section-item container">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-12 section-left">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7094.136096284894!2d105.82862782653692!3d20.965252088203368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad001f980253%3A0x2c5b8ab5fe9f57ae!2zSG_DoG5nIExp4buHdCwgSG_DoG5nIE1haSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1709731861046!5m2!1svi!2s"
                   width="100%"
-                  height="450"
+                  height="100%"
                   style="border: 0"
                   allowfullscreen=""
                   loading="lazy"
@@ -342,7 +304,7 @@
               <div class="col-md-6 col-sm-6 col-12 section-right">
                 <div class="section-right-item">
                   <div class="accordion-top">
-                    <span id="mau">Chat Luong</span>
+                    <span id="mau">Chất Lượng</span>
                     <div class="plus">
                       <button class="plus-click">
                         <i class="fa-solid fa-plus"></i>
@@ -363,7 +325,7 @@
                 </div>
                 <div class="section-right-item">
                   <div class="accordion-top">
-                    <span>Chat Luong</span>
+                    <span>Hợp Vệ Sinh</span>
                     <div class="plus">
                       <button class="plus-click">
                         <i class="fa-solid fa-plus"></i>
@@ -377,14 +339,13 @@
                   </div>
                   <div class="accordion-bottom">
                     <span
-                      >Chất lượng được đảm bảo từ khâu nguyên liêu, chế biến, và
-                      ra thành phẩm.</span
+                      >Sản xuất trong môi trường được chứng nhận vệ sinh an toàn thực phẩm của TP Hà Nội..</span
                     >
                   </div>
                 </div>
                 <div class="section-right-item">
                   <div class="accordion-top">
-                    <span>Chat Luong</span>
+                    <span>Thơm Ngon</span>
                     <div class="plus">
                       <button class="plus-click">
                         <i class="fa-solid fa-plus"></i>
@@ -398,14 +359,13 @@
                   </div>
                   <div class="accordion-bottom">
                     <span
-                      >Chất lượng được đảm bảo từ khâu nguyên liêu, chế biến, và
-                      ra thành phẩm.</span
+                      >Quán chung tôi đảm bảo đồ ăn thơm ngon, hương vị chuẩn phù hợp với khẩu vị của mọi thực khách.</span
                     >
                   </div>
                 </div>
                 <div class="section-right-item">
                   <div class="accordion-top">
-                    <span>Chat Luong</span>
+                    <span>Đậm Đà</span>
                     <div class="plus">
                       <button class="plus-click">
                         <i class="fa-solid fa-plus"></i>
@@ -419,8 +379,7 @@
                   </div>
                   <div class="accordion-bottom">
                     <span
-                      >Chất lượng được đảm bảo từ khâu nguyên liêu, chế biến, và
-                      ra thành phẩm.</span
+                      >Món ăn chuẩn vị đậm đà khiến thực khách có trải nghiêm tuyệt voiif khi thưởng thức.</span
                     >
                   </div>
                 </div>
@@ -434,8 +393,11 @@
       <div class="footer">
         <div class="footer-top">
           <div class="footer-item-left">
-            <i class="fa-sharp fa-solid fa-house-chimney"></i>
-            <span>xxHoang Liet, P.Hoang Mai, TP.Ha Noi</span>
+            <h3>Thông Tin</h3>
+            <div class="is-divider"></div>
+            <div class="footer-item-left-bot">
+              <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            <span>Hoàng Liệt, P.Hoàng Mai, TP.Hà Nội</span>
             <br />
             <i class="fa-solid fa-phone"></i>
             <span>09999999-123456789</span>
@@ -446,18 +408,27 @@
             <i class="fa-brands fa-facebook"></i>
             <span>facebook.com</span>
             <br />
+            </div>
           </div>
           <div class="footer-item-right">
-            <h3>Danh Muc</h3>
+            <h3>Danh Mục</h3>
             <div class="is-divider"></div>
             <div class="footer-right-item">
               <ul>
-                <li><a href="#">Trang Chu</a></li>
-                <li><a href="#">Gioi Thieu</a></li>
-                <li><a href="./product.html">Cua Hang </a></li>
-                <li><a href="#">Tin tuc </a></li>
-                <li><a href="#">lien He</a></li>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="./product.html">Cửa Hàng </a></li>
+                <li><a href="#">Tin Tức </a></li>
+                <li><a href="#">liên Hệ</a></li>
               </ul>
+            </div>
+          </div>
+          <div class="danky">
+            <span>Đăng Ký Ngay!</span>
+            <div class="is-divider"></div>
+            <div class="danky-item">
+              <input type="text" placeholder="email.@gmail.com">
+            
             </div>
           </div>
         </div>
