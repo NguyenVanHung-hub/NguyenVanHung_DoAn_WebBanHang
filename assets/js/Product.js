@@ -269,15 +269,10 @@ wrapperMenu.addEventListener("click", (event) =>{
 // const changes = document.querySelectorAll('.opti').value;
 // console.log(changes);
 
-$(document).ready(function(){
-    $("select.country").change(function(){
-        var selectedCountry = $(this).children("option:selected").val();
-        if(selectedCountry == price){
-            priceTang(data);
-            displayData(data);
-        }
-    });
-});
+
+// có form gồm buttm có icon đẻ gửi dl đi
+// truy cap input và buttun(sk onsubmit).
+// 
 
 
 
