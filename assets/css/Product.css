@@ -8,6 +8,22 @@ html{
     font-size: 24px;
 }
 
+
+/* search */
+
+.sear{
+    width: 75%;
+}
+.sear input{
+    width: 100%;
+}
+.ic-sear{
+    border: none;
+}
+.ic-sear .icon {
+    top: 30%;
+}
+
 /* Shop */
  .shop-product{
     width: 100%;

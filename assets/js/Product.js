@@ -62,27 +62,7 @@ const data = [
         "category":"pho",
         "image" :"https://images.foody.vn/res/g100008/1000070824/s400x400/fdbbfeec-cc55-43c8-a2dc-c96a2b96-09ec7dc4-231011124619.jpeg"
     },
-    {
-        "id" : 9,
-        "name" : "Mỳ Kim Chi Bò",
-        "price" : "30000",
-        "category":"my",
-        "image" :"https://images.foody.vn/res/g25/242707/s400x400/d2e8d239-fb9f-40b7-b4b8-d186597c-4862b11a-220413173408.jpeg"
-    },
-    {
-        "id" : 10,
-        "name" : "Mỳ Kim Chi Sườn Sụn",
-        "price" : "50000",
-        "category":"my",
-        "image" :"https://images.foody.vn/res/g25/242707/s400x400/5197b1a3-6386-422c-85bf-4c6b7104-b18da70f-220413183804.jpeg"
-    },
-    {
-        "id" : 11,
-        "name" : "Mỳ Kim Chi Đùi Gà",
-        "price" : "40000",
-        "category":"my",
-        "image" :"https://images.foody.vn/res/g25/242707/s400x400/41698fe7-5fa2-4545-9ed7-4f4c5ab2-74a0f998-220413172758.jpeg"
-    },
+    
     {
         "id" : 12,
         "name" : "Mỳ Kim Chi Nặm Bò",
@@ -146,6 +126,7 @@ const data = [
         "category":"banh my",
         "image" :"https://images.foody.vn/res/g75/749370/s400x400/5ba2c1a4-95bb-48fa-9f38-01065d7c-477a1774-220326150401.jpeg"
     },
+    
 ];
 
 let rowPro = document.querySelector('.row-js-pro');
@@ -276,3 +257,16 @@ wrapperMenu.addEventListener("click", (event) =>{
 
 
 
+const search = document.getElementById('searchs');
+const buttonSearch = document.querySelector('.ic-sear');
+const prNex = document.querySelector('.pagination');
+
+buttonSearch.addEventListener("click", () =>{
+    let dataNew = data.filter( item =>{
+        return item.category.includes(search.value);
+    });
+    rowPro.innerHTML = ` `;
+    
+    displayData(dataNew, 1);
+    createPagination(dataNew);
+});
