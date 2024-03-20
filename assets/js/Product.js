@@ -256,7 +256,7 @@ wrapperMenu.addEventListener("click", (event) =>{
 // 
 
 
-
+// Search
 const search = document.getElementById('searchs');
 const buttonSearch = document.querySelector('.ic-sear');
 const prNex = document.querySelector('.pagination');
@@ -270,3 +270,16 @@ buttonSearch.addEventListener("click", () =>{
     displayData(dataNew, 1);
     createPagination(dataNew);
 });
+
+
+
+
+// Select
+
+const selectPro = document.querySelector('.orderby');
+data.forEach((item) =>{
+    
+
+selectPro.addEventListener("change", () =>{
+    console.log(selectPro.value)
+})
