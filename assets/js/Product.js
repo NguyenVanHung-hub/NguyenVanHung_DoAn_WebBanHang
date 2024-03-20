@@ -167,6 +167,7 @@ const displayData = (data, page) =>{
 
 const createPagination = (data) =>{
     const paginationContainer = document.querySelector('#pagNums');
+
     paginationContainer.innerHTML = ``;
     totalPage = Math.ceil(data.length/itemPerPage);
     
@@ -174,10 +175,10 @@ const createPagination = (data) =>{
     if(totalPage > 0){
         const nextBtn = document.createElement("button");
         const pretBtn = document.createElement("button");
-
         nextBtn.textContent="Next";
         pretBtn.textContent="Prev";
-        
+        nextBtn.classList.add("nex");
+        pretBtn.classList.add("pre");
         nextBtn.addEventListener("click", () =>{
             if(totalPage >= currentPage +1){
                 displayData(data, currentPage+1);
@@ -259,13 +260,16 @@ wrapperMenu.addEventListener("click", (event) =>{
 // Search
 const search = document.getElementById('searchs');
 const buttonSearch = document.querySelector('.ic-sear');
-const prNex = document.querySelector('.pagination');
+const pre = document.querySelector('.pre');
+const nex = document.querySelector('.nex');
+
 
 buttonSearch.addEventListener("click", () =>{
     let dataNew = data.filter( item =>{
         return item.category.includes(search.value);
     });
-    rowPro.innerHTML = ` `;
+    pre.remove();
+    nex.remove();
     
     displayData(dataNew, 1);
     createPagination(dataNew);
@@ -277,9 +281,29 @@ buttonSearch.addEventListener("click", () =>{
 // Select
 
 const selectPro = document.querySelector('.orderby');
-data.forEach((item) =>{
-    
+
+const dataAscending = data.slice().sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+const dataDescending = data.slice().sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
+
 
 selectPro.addEventListener("change", () =>{
-    console.log(selectPro.value)
+    
+    if(selectPro.value == "price"){
+        pre.remove();
+        nex.remove();
+        displayData(dataAscending, 1);
+        createPagination(dataAscending);
+    };
+    if(selectPro.value == "price-desc"){
+        pre.remove();
+        nex.remove();
+        displayData(dataDescending, 1);
+        createPagination(dataDescending);
+    };
+    if(selectPro.value == "menu-oder"){
+        pre.remove();
+        nex.remove();
+        displayData(data, 1);
+        createPagination(data);
+    };
 })
