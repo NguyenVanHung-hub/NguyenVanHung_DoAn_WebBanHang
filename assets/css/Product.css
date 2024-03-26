@@ -51,6 +51,14 @@ html{
     font-size: 0.8rem;
 }
 
+.product-suggest-item a {
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
 .orderby{
     border: 1px solid #ddd;;
     font-size: 0.9rem;

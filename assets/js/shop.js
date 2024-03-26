@@ -1,7 +1,8 @@
 
 // Gio Hang
 const cartModalOverlay = document.querySelector('.cart-modal-overlay');
-const addToCart = document.querySelectorAll('.button-shop');
+const addToCart = document.querySelectorAll('.button-sho');
+
 const cart = document.querySelector('.cart-btn');
 const close = document.querySelector('#close-btn');
 const gio = document.querySelector('.gio');
@@ -36,6 +37,7 @@ cart.addEventListener('click', () => {
   });
 
   addToCart.forEach((item, ) => {
+    
     item.addEventListener('click', () => {
        addToCartclick(item);
     });
@@ -43,10 +45,11 @@ cart.addEventListener('click', () => {
 
 const addToCartclick = (item) =>{
     let cartItem = item.parentElement;
-    
+    let cartIte = cartItem.parentElement;
     let price = cartItem.querySelector('.price').innerHTML;
-    let imageSrc = cartItem.querySelector('.img').src;
-    let name = cartItem.querySelector('.name').innerHTML;
+    
+    let  imageSrc = cartIte.querySelector('.img').src;
+    let name = cartIte.querySelector('.name').innerHTML;
     let isAdd = false;
     cartItems.forEach((val) => {
       if (val.imageSrc === imageSrc && val.price === price) {

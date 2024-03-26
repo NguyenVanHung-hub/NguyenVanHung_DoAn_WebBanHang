@@ -163,7 +163,7 @@ data.forEach((item) =>{
         </div>
         <div class="button-shop">
             <span class="price">${item.price} vnd</span>
-            <button><i class="fa-solid fa-cart-shopping"></i>
+            <button class="button-sho"><i class="fa-solid fa-cart-shopping"></i>
             Mua</button>
             </div> 
                     
@@ -183,8 +183,8 @@ data.forEach((item, index) =>{
             
             </div>
             <div class="button-shop">
-            <span class="price">${item.price}</span>
-            <button><i class="fa-solid fa-cart-shopping"></i>
+            <span class="price">${item.price} vnd</span>
+            <button class="button-sho"><i class="fa-solid fa-cart-shopping"></i>
             Mua</button>
             </div> 
         </div>
