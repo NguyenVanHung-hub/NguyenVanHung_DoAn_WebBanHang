@@ -147,7 +147,7 @@ const displayData = (data, page) =>{
         HTML = HTML + `
         <div class="col-sm-6 col-md-3 col-12 ">
             <div class="product-suggest-item">
-            <a href="./detail.html" >
+            <a href="./detail.html?id=${item.id}">
             <div class="product-suggest-ite">
             <img src=${item.image} alt="" class="img">
             <div class="product-suggest-item-bottom product-item-bottom">
@@ -156,6 +156,7 @@ const displayData = (data, page) =>{
             </div>
             </div>
             </a>
+            
                 
                  <div class="button-shop">
                     <span class="price">${item.price} vnd</span>
@@ -316,8 +317,4 @@ selectPro.addEventListener("change", () =>{
 })
 
 
-const detail = document.querySelector('.product-suggest-ite');
-console.log(detail);
-detail.addEventListener("click",(item) =>{
-    console.log(item)
-})
+

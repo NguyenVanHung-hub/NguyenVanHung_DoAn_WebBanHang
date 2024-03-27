@@ -38,6 +38,7 @@ cart.addEventListener('click', () => {
 
   addToCart.forEach((item, ) => {
     
+    
     item.addEventListener('click', () => {
        addToCartclick(item);
     });
