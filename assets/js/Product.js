@@ -266,6 +266,10 @@ wrapperMenu.addEventListener("click", (event) =>{
 
 
 // Search
+
+
+
+
 const search = document.getElementById('searchs');
 const buttonSearch = document.querySelector('.ic-sear');
 const pre = document.querySelector('.pre');
@@ -273,14 +277,33 @@ const nex = document.querySelector('.nex');
 
 
 buttonSearch.addEventListener("click", () =>{
-    let dataNew = data.filter( item =>{
-        return item.category.includes(search.value);
-    });
-    pre.remove();
-    nex.remove();
     
-    displayData(dataNew, 1);
-    createPagination(dataNew);
+    function normalizeText(text) {
+        return text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+    
+    // Tìm kiếm không phân biệt chữ viết hoa, viết thường và có dấu
+    let dataNew = data.filter(item => {
+        const normalizedSearchValue = normalizeText(search.value);
+        const normalizedCategory = normalizeText(item.name);
+        return normalizedCategory.includes(normalizedSearchValue);
+    });
+    console.log(dataNew)
+    if(dataNew.length != 0){
+        pre.remove();
+        nex.remove();
+    
+        displayData(dataNew, 1);
+        createPagination(dataNew);
+    }else{
+        rowPro.innerHTML =`
+        <span>Xin lỗi cửa hàng chúng tôi không có món ăn này!</span>
+        `
+        // alert("Xin lỗi cửa hàng chúng tôi không có món ăn này!");
+        pre.remove();
+        nex.remove();
+    }
+    
 });
 
 
@@ -297,18 +320,21 @@ const dataDescending = data.slice().sort((a, b) => parseFloat(b.price) - parseFl
 selectPro.addEventListener("change", () =>{
     
     if(selectPro.value == "price"){
+        
         pre.remove();
         nex.remove();
         displayData(dataAscending, 1);
         createPagination(dataAscending);
     };
     if(selectPro.value == "price-desc"){
+        
         pre.remove();
         nex.remove();
         displayData(dataDescending, 1);
         createPagination(dataDescending);
     };
     if(selectPro.value == "menu-oder"){
+       
         pre.remove();
         nex.remove();
         displayData(data, 1);
