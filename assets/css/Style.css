@@ -14,15 +14,24 @@ html {
   height: auto;
   position: relative;
 }
-.up {
-  width: 40px;
-  height: 40px;
+.scrop {
+  width: 30px;
+  height: 30px;
   position: fixed;
   bottom: 1%;
   right: 1%;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-.up i {
-  font-size: 0.5rem;
+.scrop i {
+ 
+  
+  color:#EB1B1B;
+  z-index: 999;
 }
 /* Header-top */
 
@@ -253,7 +262,16 @@ html {
   height: auto;
   padding: 0 200px;
   background-color: #EF2020;
+  position: relative;
+    transition: top 0.3s;
   /* position: fixed; */
+  
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 9999; 
 }
 .menu-main ul {
@@ -311,6 +329,17 @@ html {
 }
 
 /* Product-hot */
+
+ .product-item a{
+  text-decoration: none;
+  color: #000;
+}
+.product-suggest-item a{
+  text-decoration: none;
+  color: #000;
+}
+
+
 
 .product-top {
   width: 100%;

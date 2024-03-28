@@ -156,11 +156,14 @@ let HTMLSlider = ``;
 data.forEach((item) =>{
      HTMLSlider = HTMLSlider + `
      <div class="item  product-hot-item product-item">
-        <img src=${item.image} alt="" class="img">
-        <div class="product-hot-item-bottom product-item-bottom">
-            <span class="name">${item.name}</span>
-            
-        </div>
+     <a href="./detail.html?id=${item.id}">
+     <img src=${item.image} alt="" class="img">
+     <div class="product-hot-item-bottom product-item-bottom">
+         <span class="name">${item.name}</span>
+         
+     </div>
+     </a>
+        
         <div class="button-shop">
             <span class="price">${item.price} vnd</span>
             <button class="button-sho"><i class="fa-solid fa-cart-shopping"></i>
@@ -177,11 +180,14 @@ data.forEach((item, index) =>{
         HTMLHomePr = HTMLHomePr +`
         <div class="col-sm-6 col-md-3 col-12 ">
         <div class="product-suggest-item">
+            <a href="./detail.html?id=${item.id}">
             <img src=${item.image} alt="" class="img">
             <div class="product-suggest-item-bottom product-item-bottom">
             <span class="name">${item.name}</span>
             
             </div>
+            </a>
+            
             <div class="button-shop">
             <span class="price">${item.price} vnd</span>
             <button class="button-sho"><i class="fa-solid fa-cart-shopping"></i>
@@ -215,9 +221,6 @@ wrapperMenu.addEventListener("click", (event) =>{
         menuMoblie.style.transform = "translateX(-200%)";
     }
 });
-
-
-
 
 
 

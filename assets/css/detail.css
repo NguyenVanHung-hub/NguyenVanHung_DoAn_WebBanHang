@@ -2,3 +2,112 @@
 .header-main{
     justify-content: space-between;
 }
+
+.product-datail{
+    padding: 50px 200px;
+    background-color: rgb(0, 0, 0, 0.05);
+   
+}
+.product-datail h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(248, 26, 26);
+    margin-bottom: 20px;
+    
+}
+.datail-item{
+    display: flex;
+}
+.datail-pro-left{
+    flex: 1;
+}
+.datail-pro-left img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.deta-pro-left-item{
+    padding-top: 1rem;
+    display: flex;
+    font-size: 1rem;
+    
+    font-weight: 500;
+    justify-content: space-between;
+}
+.deta-pro-left-item:nth-child(1){
+    text-transform: capitalize;
+}
+.datail-pro-right{
+    flex: 1;
+    padding-left: 1rem;
+}
+.datail-pro-right h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: rgb(248, 26, 26);
+    margin-bottom: 20px;
+}
+.datail-pro-right span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+
+
+@media only screen and (max-width: 1322px) {
+    html{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    html{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 1176px) {
+    html{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1157px) {
+    html{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .product-datail{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    
+    .product-datail{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .datail-item{
+        flex-direction: column;
+    }
+    .datail-pro-right{
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    
+    .product-datail{
+        padding-left: 0;
+        padding-right: 0px;
+    }
+}
