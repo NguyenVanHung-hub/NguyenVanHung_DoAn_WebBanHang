@@ -26,12 +26,13 @@ html {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 999999;
 }
 .scrop i {
  
   
   color:#EB1B1B;
-  z-index: 999;
+  z-index: 999999;
 }
 /* Header-top */
 
